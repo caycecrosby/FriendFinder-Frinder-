@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Acme|Cormorant+Garamond:400,700i|Lobster" rel="stylesheet">
+<!-- <script src="../data/friends.js"></script> -->
+</head>
+<body>
+<div class ="container container2">
+	<div class="row">
+		<div class="col-md-12 bodyPortion">
+		<br>
+		<br>
+			
+
+			<div class="form-group">
+			<label for="name" id="nameLabel">Name</label>
+			<input type="Name" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Enter Name">
+			</div>
+			<div class="form-group">
+			<label for="linkToImage" id="linkLabel">Link</label>
+			<input type="name" class="form-control" id="linkToImage" placeholder="Link to Photo">
+			</div>
+			<br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="panel panel-default h1Title">
+			<div class="panel-body">
+				<center>
+				<h3>Answer the questions about yourself 5 being strongly agree and 1 being the opposite!</h3>
+				</center>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row friendsBlackBG">
+		<div class="col-md-6">
+
+			
+					<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+					<div class="form-group">
+						<select class="form-control" id="select1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				
+
+
+			
+			<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select3">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+
+			
+			<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select5">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+
+			
+			<h4>You rarely do something just out of sheer curiosity.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select7">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+
+			
+			<h4>People can rarely upset you.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select9">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+		</div>
+
+		<div class="col-md-6">
+			
+			<h4>It is often difficult for you to relate to other people’s feelings.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			
+			<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select4">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			
+			<h4>You rarely get carried away by fantasies and ideas.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select6">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			
+			<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select8">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+			
+			<h4>You feel more energetic after spending time with a group of people.</h4>
+			<div class="form-group">
+				<select class="form-control" id="select10">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+		</div>
+	</div>
+	<!-- Trigger the modal with a button -->
+  <center><button id="resultsButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Get your results!</button></center>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 id="modalH4" class="modal-title"></h4>
+        </div>
+        <div class="modal-body" id="modalbodyy">
+			<p class= "modalParagraph"> </p>
+
+<!-- ==================================================================================== -->
+		 
+        </div>
+        <div class="modal-footer">
+          <button id="modalCloseButton" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>	
+
+<script>
+	$("#resultsButton").on("click", function (){
+
+	var scoresArray = [];
+
+
+
+
+	var name = ($("#userName").val().trim());
+	var imageNoTags = ($("#linkToImage").val().trim());
+	// var imageWithTags = "<img src='"+ imageNoTags + "'>"
+
+	
+//_________________________________________for user picture in modal_____________________________
+
+//________________________for user responses_____________________________________________
+
+
+var userResponse1 = $("#select1 option:selected").text();
+var userResponse2 = $("#select2 option:selected").text();
+var userResponse3 = $("#select3 option:selected").text();
+var userResponse4 = $("#select4 option:selected").text();
+var userResponse5 = $("#select5 option:selected").text();
+var userResponse6 = $("#select6 option:selected").text();
+var userResponse7 = $("#select7 option:selected").text();
+var userResponse8 = $("#select8 option:selected").text();
+var userResponse9 = $("#select9 option:selected").text();
+var userResponse10 = $("#select10 option:selected").text();
+
+scoresArray.push(userResponse1, userResponse2, userResponse3, userResponse4, userResponse5, userResponse6, userResponse7, userResponse8, userResponse9, userResponse10)
+
+//____ For getting the sum of scores _______________________________
+
+var scoreSum = 0;
+for(var i=0; i < scoresArray.length; i++){
+	scoreSum += parseInt(scoresArray[i]);
+}
+console.log(scoreSum);
+
+
+//____ For getting the sum of scores _______________________________
+
+function newUser(name, photo, scores){
+    this.name = name;
+	this.photo = photo;
+	this.scores = scores;
+}
+var person1 = new newUser(name, imageNoTags, scoresArray, scoreSum);
+console.log(person1)
+
+
+ $.post("/myFriends", person1)
+ .done(function(data){
+	 console.log(data);
+	  var friendLogo = '<img src="friendLogo.png"height="100"width="100">';
+	  var bFF;
+		bFF = (data)
+		console.log(bFF)
+	  $("#modalH4").append("Hello " + person1.name + "! You've been matched with " + bFF.name +"!");
+		$("#modalbodyy").append('<img src="' + person1.photo + '"height="200" width ="200">' +"BEEEST FRIEEEENDSS!" + ' <img src="' + bFF.photo + '"height="200" width ="200">')
+ });
+
+
+//_________________________________________for user picture in modal____________________________
+	var user = ($("#userName").val().trim());
+
+
+});
+
+$("#modalCloseButton").on("click", function (){
+    location.reload();
+});
+
+
+</script>
+</body>
+</html>
+
+<!-- //https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/12931202_1154877987879831_953693604773053924_n.jpg?oh=d5098150a72b0f253a5061772b86c0d8&oe=5A884BAA -->
+
+<!-- // use api route to post to from json  -->
