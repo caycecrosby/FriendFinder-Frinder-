@@ -3,7 +3,7 @@ var app = express();
 var myFriends = require("./app/data/friends.js");
 var bodyParser = require("body-parser");
 var path = require('path');
-var PORT = 3001;
+var PORT = process.env.PORT || 3001;
 var fs = require('fs');
 
 app.use(bodyParser.json());
